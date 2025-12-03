@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 確保 App 容器能撐滿螢幕，避免 Canvas 高度計算為 0 或跑版 */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* 防止捲軸意外出現 */
+}
